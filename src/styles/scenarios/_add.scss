@@ -1,0 +1,68 @@
+.scenarios__add {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&-button {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 0.7407vh;
+		background: #1acd81;
+		border-radius: 0.7407vh;
+		padding: 0.7407vh;
+		transition: all .15s ease-in-out;
+		& > img {
+			width: 1.4815vh;
+			height: 1.4815vh;
+		}
+		& > span {
+			font-size: 1.4815vh;
+			color: #03301f;
+		}
+		&:hover {
+			background: #0fa968;
+			cursor: pointer;
+		}
+	}
+	&-warning {
+		text-align: center;
+		font-size: 1.2037vh;
+		color: #ff0000
+	}
+	&-input > input {
+		background: #180c69;
+		border: 0.0741vh solid #361bc3;
+		border-radius: 0.7407vh;
+		padding: 0.8333vh 1.1111vh;
+		width: 100%;
+		height: 2.963vh;
+		color: #fff;
+		outline: none;
+		font-size: 1.4815vh;
+		&::placeholder {
+			color: #B3B3B3;
+			font-size: 1.1852vh;
+		}
+	}
+	&-input > div {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 0.9259vh;
+		& > button {
+			font-size: 1.4815vh;
+			border-radius: 0.7407vh;
+			padding: 0.7407vh;
+			width: 9.2593vh;
+			height: 2.963vh;
+			background: #1acd81;
+			transition: all .15s ease-in-out;
+			color: #03301f;
+			&:hover {
+				background: #0fa968;
+				cursor: pointer;
+			}
+		}
+	}
+}

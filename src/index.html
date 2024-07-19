@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="./assets/favicon.svg" type='image/svg'>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<title>ToDo List JavaScript</title>
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<div id="app">
+		<div class="todo">
+			<div class="todo__buttons">
+				<button class="todo__buttons-button-quit">
+					<img class="button-quit-img" src="./assets/icons/scenario-icons/delete.svg">
+				</button>
+			</div>
+			<div class="todo__title">список задач</div>
+			<div class="todo__main-block">
+				<div class="todo__content">
+					<div class="todo__scenarios">
+						<div class="scenarios__title">Сценарии</div>
+						<div class="scenarios__items-list"></div>
+						<div class="scenarios__add">
+							<button class="scenarios__add-button">
+								<img class="add-button__image" src="./assets/icons/scenario-icons/plus.svg"></img>
+								<span class="add-button__body">Добавить сценарий</span>
+							</button>
+							<span class="scenarios__add-warning hidden">Достигнуто максимальное количество сценариев!</span>
+							<div class="scenarios__add-input hidden">
+								<input placeholder="Напиши название" type="text" class="add-input__input">
+								<div class="add-input__buttons">
+									<button class="button-cancel">Отмена</button>
+									<button class="button-add">Добавить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="todo__tasks">
+						<div class="tasks__title">Доступные задачи</div>
+						<div class="tasks__add-task">
+							<input placeholder="Напиши название задачи" type="text" class="add-task__input">
+							<button class="add-task__button">Создать задачу</button>
+						</div>
+						<div class="tasks__sort-delete">
+							<button class="tasks__sort-button">
+									<img class="sort-button__icon" src="./assets/icons/other-icons/arrow.svg"></img>
+									<span class="sort-button__text">Сортировка</span>
+							</button>
+							<button class="tasks__delete-button">
+									<img class="delete-button__icon" src="./assets/icons/other-icons/trash.svg"></img>
+									<span class="delete-button__text">Очистить список</span>
+							</button>
+						</div>
+						<div class="tasks__bottom">
+							<div class="tasks__tasks-list"></div>
+							<div class="tasks__completed-tasks">
+								<button class="completed-tasks__button">
+									<img class="completed-tasks__image" src="./assets/icons/other-icons/chevron.svg">
+									<span class="completed-tasks__text">Выполненные задачи</span>
+								</button>
+							</div>
+							<div class="tasks__completed-tasks-list"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="js/script.js"></script>
+</body>
+</html>

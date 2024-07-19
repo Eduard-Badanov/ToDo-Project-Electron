@@ -1,0 +1,43 @@
+.tasks__completed-tasks-list {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column-reverse;
+	gap: 1.3889vh;
+	width: 100%;
+	& > div {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		background: #11563a;
+		border: 0.0741vh solid #43e5a0;
+		border-radius: 0.7407vh;
+		padding: 0 0.9259vh 0 1.2963vh;
+		width: 46.2963vh;
+		height: 3.7037vh;
+		&.animated > div > span {
+			animation-duration: 10s;
+			animation-name: slide;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		& > div {
+			display: flex;
+			justify-content: start;
+			width: 37.037vh;
+			overflow: hidden;
+			& > span {
+				position: relative;
+				display: flex;
+				flex-direction: row-reverse;
+				white-space: nowrap;
+			}
+		}
+		& > button {
+			height: 2.037vh;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

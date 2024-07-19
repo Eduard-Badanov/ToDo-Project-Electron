@@ -1,0 +1,42 @@
+@import '_item.scss';
+@import '_add.scss';
+
+@mixin flexColumnCenter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.todo__scenarios {
+	@include flexColumnCenter();
+	gap: 1.8519vh;
+	width: 19.9074vh;
+	height: max-content;
+}
+.scenarios {
+	&__title {
+		font-size: 1.9444vh;
+		padding-bottom: 0.7407vh
+	}
+	&__items-list {
+		@include flexColumnCenter();
+		border-radius: 0.7407vh;
+		padding: 1.3889vh 1.3889vh 1.8519vh 1.3889vh;
+		background: rgba(16, 133, 84, 0.6);
+		border: 0.0926vh solid #0fa968;
+		gap: 0.6481vh;
+		max-height: 27.8704vh;
+		overflow-y: overlay;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+		&::-webkit-scrollbar {
+			background: none;
+			width: 0.463vh;
+			&-thumb {
+				border-radius: 0.9259vh;
+				background: #1acd81;
+				outline: 0.0741vh solid #43e5a0;
+			}
+		}
+	}
+}

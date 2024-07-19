@@ -1,0 +1,296 @@
+@media screen and (width <= 1500px) {
+	.todo__main-block {
+		padding: 0 150px;
+	}	
+}
+@media screen and (width <= 1450px) {
+	.todo__title {
+		margin-bottom: 30px;
+		font-size: 32px;
+	}
+}
+@media screen and (width <= 1350px) {
+	.todo__main-block {
+		height: 600px;
+		padding: 0 100px;
+	}	
+}
+@media screen and (width <= 1150px) {
+	.todo__main-block {
+		height: 600px;
+		padding: 0 80px;
+	}
+	.tasks__add-task > input {
+		width: 350px;
+	}
+	.tasks__bottom {
+		max-height: none;
+		padding-right: 0;
+	}
+}
+@media screen and (width <= 1050px) {
+	body {
+		align-items: flex-start !important;
+		height: fit-content !important;
+	}
+	.todo {
+		padding-bottom: 60px;
+	}
+	.todo__content {
+		flex-direction: column;
+		align-items: center;
+	}
+	.todo__main-block {
+		height: max-content;
+	}
+	.tasks__title {
+		margin: 0 auto;
+	}
+	.tasks__tasks-list {
+		width: 480px;
+	}
+	.task-left__body {
+		width: 250px;
+	}
+	.tasks__completed-tasks-list > div {
+		width: 450px;
+		& > div {
+			width: 350px;
+		}
+	}
+	.todo__scenarios {
+		width: calc(100% - 150px)
+	}
+	.scenarios__items-list {
+		width: 75%;
+		gap: 15px;
+		max-height: none;
+	}
+	.items-list__item-button, .items-list__item-button-created {
+		width: 90%;
+	}
+	.todo__tasks {
+		padding-bottom: 30px;
+	}
+}
+@media screen and (width <= 710px) {
+	.tasks__tasks-list {
+		width: 400px;
+	}
+	.task-left__body {
+		width: 180px;
+	}
+	.tasks__completed-tasks-list > div {
+		width: 370px;
+	}
+	.tasks__add-task > input {
+		width: 270px;
+	}
+	.todo__scenarios {
+        width: calc(100% - 70px);
+    }
+	body .todo__title {
+		margin-bottom: 20px;
+		font-size: 26px;
+	}
+	.todo {
+		padding-bottom: 50px;
+	}
+}
+@media screen and (width <= 650px) {
+	.todo__main-block {
+		padding: 0 50px;
+	}
+}
+@media screen and (width <= 550px) {
+	.item-button__text, .scenarios__add-button > span, .tasks__add-task > input, .tasks__add-task > button, .task-left__text, .task-right__text, .tasks__completed-tasks-list > div > div > span, .items-list__item-button-created > div > div > span {
+		font-size: 14px !important;
+	}
+	.tasks__add-task > input, .tasks__add-task > button {
+		height: 35px;
+	}
+	.tasks__sort-delete > button > span, .tasks__completed-tasks > button > span, .task-right__data {
+		font-size: 12px;
+	}
+	.tasks__completed-tasks-list > div > div {
+        width: 200px;
+    }
+	.todo__main-block {
+        padding: 0 30px;
+    }
+	.todo__content {
+		gap: 75px;
+	}
+}
+@media screen and (width <= 500px) {
+	.todo__main-block {
+        padding: 0 25px;
+    }
+	.tasks__tasks-list {
+		width: 350px;
+	}
+	.task-left__body {
+		width: 130px;
+	}
+	.tasks__completed-tasks-list > div {
+		width: 320px;
+	}
+	.tasks__add-task > input {
+		width: 220px;
+	}
+	.todo__scenarios {
+        width: calc(100% - 50px);
+    }
+}
+@media screen and (width <= 450px) {
+	.tasks__tasks-list {
+		width: 300px;
+	}
+	.task-left__body {
+		width: 90px;
+	}
+	.tasks__completed-tasks-list > div {
+		width: 270px;
+	}
+	.tasks__add-task > input {
+		width: 190px;
+	}
+	.todo__scenarios {
+        width: calc(100% - 40px);
+    }
+}
+@media screen and (width <= 420px) {
+	.tasks__tasks-list {
+		width: 270px;
+	}
+	.task-left__body {
+		width: 75px;
+	}
+	.tasks__completed-tasks-list > div {
+		width: 240px;
+	}
+	.tasks__add-task > input {
+		width: 190px;
+	}
+	.todo__scenarios {
+        width: calc(100% - 30px);
+    }
+	.item-button__text, .scenarios__add-button > span, .tasks__add-task > input, .tasks__add-task > button, .task-left__text, .task-right__text, .tasks__completed-tasks-list > div > div > span, .items-list__item-button-created > div > div > span {
+		font-size: 12px !important;
+	}
+	.tasks__add-task > input, .tasks__add-task > button {
+		height: 30px;
+	}
+	.tasks__sort-delete > button > span, .tasks__completed-tasks > button > span, .task-right__data {
+		font-size: 10px;
+	}
+	.todo__main-block {
+        padding: 0 15px;
+    }
+	.tasks__completed-tasks-list > div > div {
+        width: 180px;
+    }
+	.todo__content {
+		margin-top: 30px;
+	}
+}
+@media screen and (width <= 385px) {
+	.tasks__tasks-list {
+		width: 240px;
+	}
+	.task-left__body {
+		width: 60px;
+	}
+	.tasks__completed-tasks-list > div {
+		width: 210px;
+	}
+	.tasks__add-task > input {
+		width: 190px;
+	}
+	.todo__scenarios {
+		width: calc(100% - 30px);
+    }
+	.item-button__text, .scenarios__add-button > span, .tasks__add-task > input, .tasks__add-task > button, .task-left__text, .task-right__text, .tasks__completed-tasks-list > div > div > span, .items-list__item-button-created > div > div > span {
+		font-size: 10px !important;
+	}
+	.tasks__add-task > input, .tasks__add-task > button {
+		height: 25px;
+	}
+	.tasks__sort-delete > button > span, .tasks__completed-tasks > button > span, .task-right__data {
+		font-size: 8px;
+	}
+	.todo__main-block {
+        padding: 0 10px;
+    }
+	.tasks__completed-tasks-list > div > div {
+        width: 150px;
+    }
+	.todo {
+		padding-bottom: 45px;
+	}
+	.todo__content {
+        gap: 40px;
+    }
+}
+@media screen and (width <= 370px) {
+	.tasks__tasks-list {
+		width: 220px;
+	}
+	.task-left__body {
+		width: 45px;
+	}
+	.tasks__completed-tasks-list > div {
+		width: 190px;
+	}
+	.tasks__add-task > input {
+		width: 190px;
+	}
+	.todo__scenarios {
+        width: calc(100% - 50px);
+    }
+	.item-button__text, .scenarios__add-button > span, .tasks__add-task > input, .tasks__add-task > button, .task-left__text, .task-right__text, .tasks__completed-tasks-list > div > div > span, .items-list__item-button-created > div > div > span {
+		font-size: 8px !important;
+	}
+	.tasks__add-task > input, .tasks__add-task > button {
+		height: 20px;
+	}
+	.tasks__sort-delete > button > span, .tasks__completed-tasks > button > span, .task-right__data {
+		font-size: 7px;
+	}
+	.todo__main-block {
+        padding: 0 8px;
+    }
+	.tasks__completed-tasks-list > div > div {
+        width: 130px;
+    }
+	.todo {
+		padding-bottom: 35px;
+	}
+	.todo__content {
+        gap: 35px;
+    }
+}
+@media screen and (height <= 900px) {
+	.todo__main-block {
+		padding-bottom: 15px;
+	}
+	#app .todo__title {
+		font-size: 32px;
+		margin-bottom: 30px;
+	}
+	.todo {
+		position: relative;
+		padding-bottom: 60px;
+		top: 50px;
+	}
+	body {
+		align-items: flex-start !important;
+		height: fit-content !important;
+		flex-direction: row !important;
+	}
+}
+@media screen and (width <= 1050px) and (height >= 901px) {
+	.todo {
+		padding-top: 40px;
+	}
+}
