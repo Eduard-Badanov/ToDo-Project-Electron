@@ -7,7 +7,7 @@ import { taskIcons } from '../pathsToIcons.js'
 import { user } from '../userInfo.js'
 
 document.querySelector('.add-task__button').addEventListener('click', () => {
-	if (document.querySelector('.tasks__add-task > input').value.trim() !== '') {
+	if (document.querySelector('.tasks__add-task > input').value.trim() !== '' && document.querySelector('.tasks__add-task > input').value !== '###DELETE ALL PARAMETERS###') {
 		const DOMname = document.querySelector('.scenarios__items-list > button.item-active').classList[1]
 		let id = null
 		const text = document.querySelector('.tasks__add-task > input').value.trim()
@@ -33,6 +33,10 @@ document.querySelector('.add-task__button').addEventListener('click', () => {
 			document.querySelector(`.${DOMname}-${id}`).classList.add('animated')
 		}
 		document.querySelector('.tasks__add-task > input').value = ''
+	} else if (document.querySelector('.tasks__add-task > input').value === '###DELETE ALL PARAMETERS###') {
+		localStorage.removeItem('todo-user-js');
+		document.querySelector('.tasks__add-task > input').value = ''
+		window.location.reload()
 	}
 })
 document.querySelector('.tasks__add-task > input').addEventListener('keydown', (e) => {

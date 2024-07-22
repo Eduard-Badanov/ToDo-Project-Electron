@@ -15,3 +15,10 @@ window.addEventListener('load', () => {
 document.querySelector('.todo__buttons-button-quit').addEventListener('click', () => {
 	window.close()
 });
+
+window.addEventListener('keydown', (e) => {
+    if (e.keyCode === 75 && e.ctrlKey && e.altKey) {
+        localStorage.removeItem('todo-user-js');
+		window.location.reload()
+    }
+});
